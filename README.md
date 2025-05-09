@@ -1,64 +1,35 @@
-# 1D Pong Game – Embedded Systems Final Project
+# Mason Crim's Portfolio Website
 
-A simple one-dimensional pong game implementation using an ATmega328p microcontroller.
+A modern, responsive portfolio website showcasing my software development, embedded systems, and AI projects. Built with React and styled with custom CSS based on Truman State University's colors.
 
-***
+![Portfolio Preview](screenshot.png)
 
-## 🎮 Overview
+## 🚀 Live Demo
 
-This project implements a **1D Pong game** on an **ATmega328p microcontroller**, using:
+Check out the live website: [https://masoncrim.github.io/portfolio](https://masonc13.github.io/Portfolio-Website/)
 
-- **10 LEDs** to represent the ball's position
-- **1 button** to "hit" the ball back when it reaches the edge
-- **1 potentiometer** to control ball speed
-- **1 buzzer** for game feedback sounds
-- **Sleep mode** to save power when idle
+## 🛠️ Technologies Used
 
-***
+- React
+- React Router
+- CSS3
+- JavaScript (ES6+)
+- GitHub Pages
 
-## ⚙️ How It Works
+## ✨ Features
 
-- LEDs simulate a ball "bouncing" left and right
-- Player presses the button to reflect the ball when it reaches the end
-- The potentiometer adjusts game speed
-- Successful and failed button presses trigger different buzzer sounds
-- The system enters sleep mode if idle for too long
+- **Responsive Design:** Optimized for all devices and screen sizes
+- **Dark/Light Mode:** Toggle between dark and light themes
+- **Interactive UI:** Smooth transitions and intuitive navigation
+- **Project Filtering:** Filter projects by category (Software, Embedded Systems, AI)
+- **Resume Viewer:** View and download my resume directly from the website
+- **Contact Form:** Get in touch through the built-in contact form
 
-***
+## 🧩 Key Sections
 
-## 🔌 Hardware Connections
-
-- **LEDs**: PD0–PD7, PB0–PB1
-- **Button**: PC0
-- **Potentiometer**: PC1 (ADC)
-- **Buzzer**: PB3
-
-***
-
-## 💻 Build & Flash Instructions
-
-1. Run `make` to compile
-2. Flash to the microcontroller with AVRDUDE:
-
-```
-avrdude -c <programmer> -p m328p -U flash:w:pong.hex:i
-```
-
-***
-
-## 📁 File Structure
-
-- `main.c`: Main game logic
-- `led.c/h`: LED control
-- `input.c/h`: Button and ADC handling
-- `buzzer.c/h`: Buzzer tone generation
-- `sleep.c/h`: Power-down sleep mode
-- `timer.c/h`: Timer-based LED and button handling
-- `Makefile`: Build script
-
-***
-
-## 👨‍💻 Authors
-
-- Mason Crim
-- Jacob Hoke
+- **Home:** Introduction and featured projects
+- **About:** Personal background, education, and career journey
+- **Projects:** Detailed showcase of my technical projects with descriptions
+- **Skills:** Overview of my technical skills and expertise
+- **Resume:** View and download my professional resume
+- **Contact:** Multiple ways to connect with me
