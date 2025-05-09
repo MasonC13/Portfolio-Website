@@ -6,7 +6,7 @@ A modern, responsive portfolio website showcasing my software development, embed
 
 ## 🚀 Live Demo
 
-Check out the live website: [https://masoncrim.github.io/portfolio](https://masoncrim.github.io/portfolio)
+Check out the live website: [https://masoncrim.github.io/portfolio](https://masonc13.github.io/Portfolio-Website/)
 
 ## 🛠️ Technologies Used
 
@@ -33,17 +33,3 @@ Check out the live website: [https://masoncrim.github.io/portfolio](https://maso
 - **Skills:** Overview of my technical skills and expertise
 - **Resume:** View and download my professional resume
 - **Contact:** Multiple ways to connect with me
-
-## 💻 Development
-
-### Prerequisites
-
-- Node.js (v14.0 or higher)
-- npm or yarn
-
-### Setup and Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/masoncrim/portfolio.git
-   cd portfolio
