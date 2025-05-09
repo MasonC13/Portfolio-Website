@@ -23,28 +23,23 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // Note: We're not preventing default here as we want the form to submit to Formspree
+    // e.preventDefault();
 
-    if (formData.name && formData.email && formData.message) {
-      setFormStatus({
-        submitted: true,
-        error: false,
-        message: 'Thank you for your message! I will get back to you soon.'
-      });
-
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-    } else {
+    // You can still validate if you want before submission
+    if (!formData.name || !formData.email || !formData.message) {
+      e.preventDefault(); // Prevent submission if validation fails
       setFormStatus({
         submitted: false,
         error: true,
         message: 'Please fill out all required fields.'
       });
+      return;
     }
+
+    // If using Formspree, the actual submission is handled by the form action
+    // This function just handles client-side validation
+    // Formspree will redirect back to the page after submission
   };
 
   return (
@@ -52,24 +47,44 @@ const Contact = () => {
       <h2 className="section-title">Get In Touch</h2>
 
       <div className="contact-container">
-        <div className="contact-info">
-          <h3>Contact Information</h3>
-          <p>Feel free to reach out to me through the form or via the contact details below.</p>
+        
+      <div className="contact-info">
+  <h3>Contact Information</h3>
+  <p>Feel free to reach out through the form or connect with me below.</p>
 
-          <div className="contact-details">
-            <div className="contact-item">
-              <div className="contact-icon">✉️</div>
-              <span>masoncrim137@gmail.com</span>
-            </div>
-            <div className="contact-item">
-              <div className="contact-icon">📍</div>
-              <span>Kansas City, Missouri</span>
-            </div>
-          </div>
-        </div>
+  <div className="contact-details">
+    <div className="contact-item">
+      <div className="contact-icon">✉️</div>
+      <span>masoncrim137@gmail.com</span>
+    </div>
+    <div className="contact-item">
+      <div className="contact-icon">📍</div>
+      <span>Kansas City, Missouri</span>
+    </div>
+    <div className="contact-item">
+  <div className="contact-icon">👨‍💻</div>
+  <div className="social-links" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+    <a href="https://github.com/MasonC13" target="_blank" rel="noopener noreferrer">
+      GitHub
+    </a>
+    <span style={{ fontSize: '1rem', lineHeight: '1' }}>|</span>
+    <a href="https://www.linkedin.com/in/mason-crim-19960a294/" target="_blank" rel="noopener noreferrer">
+      LinkedIn
+    </a>
+  </div>
+
+    </div>
+  </div>
+</div>
 
         <div className="contact-form-container">
-          <form className="contact-form" onSubmit={handleSubmit}>
+          {/* Replace YOUR_FORM_ID with the actual ID from Formspree */}
+          <form 
+            className="contact-form" 
+            action="https://formspree.io/f/xgvkzwgw" 
+            method="POST"
+            onSubmit={handleSubmit}
+          >
             {formStatus.message && (
               <div className={`form-message ${formStatus.error ? 'error' : 'success'}`}>
                 {formStatus.message}

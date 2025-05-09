@@ -526,8 +526,17 @@ a:hover {
   color: var(--accent);
 }
 
-.contact-details {
-  margin-top: 2rem;
+.contact-details .social-links a {
+  color: var(--text-primary);
+  opacity: 0.9;
+  transition: all 0.3s;
+  padding: 0.5rem;
+}
+
+.contact-details .social-links a:hover {
+  color: var(--accent);
+  opacity: 1;
+  transform: translateY(-3px);
 }
 
 .contact-item {
@@ -625,13 +634,18 @@ a:hover {
 }
 
 /* Footer Styles */
-.footer {
-  background-color: var(--accent);
-  padding: 2rem;
-  text-align: center;
-  margin-top: 2rem;
+.footer .social-links a {
   color: white;
+  opacity: 0.9;
+  transition: all 0.3s;
+  padding: 0.5rem;
 }
+
+.footer .social-links a:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
 
 .social-links {
   display: flex;

@@ -14,16 +14,17 @@ const About = () => {
         />
         <div className="about-text">
           <p>
-            Hello! I'm a passionate software developer with a focus on embedded systems and artificial intelligence. 
+            Hello! I'm a passionate CS student with interests in software development, embedded systems, and artificial intelligence. 
             Currently studying Computer Science at Truman State University, I've worked on various projects 
-            ranging from low-level firmware development to sophisticated machine learning algorithms.
+            ranging from low-level firmware development to sophisticated web applications.
           </p>
           <p>
-            My journey in technology began when I built my first computer in high school. Since then, I've been dedicated 
-            to creating efficient, reliable, and innovative solutions to complex problems.
+            My journey in technology began as a kid playing video games and modding them. Since then, I've been dedicated 
+            to creating efficient, reliable, and innovative solutions to complex problems in the real world. Hoping to find
+            a career that pushes me to the best of my ability.
           </p>
           <p>
-            When I'm not coding, you can find me playing football, fishing, or exploring new technologies.
+            When I'm not behind a computer, you can find me playing football, fishing, or hanging out with friends.
           </p>
           <div className="education">
             <h3>Education</h3>
