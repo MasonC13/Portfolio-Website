@@ -1,0 +1,41 @@
+import React from 'react';
+// Import your profile photo
+import profilePhoto from '../assets/images/profile-photo.jpg';
+
+const About = () => {
+  return (
+    <section className="about-section">
+      <h2 className="section-title">About Me</h2>
+      <div className="about-content">
+        <img 
+          src={profilePhoto} 
+          alt="Mason Crim" 
+          className="about-image" 
+        />
+        <div className="about-text">
+          <p>
+            Hello! I'm a passionate software developer with a focus on embedded systems and artificial intelligence. 
+            Currently studying Computer Science at Truman State University, I've worked on various projects 
+            ranging from low-level firmware development to sophisticated machine learning algorithms.
+          </p>
+          <p>
+            My journey in technology began when I built my first computer in high school. Since then, I've been dedicated 
+            to creating efficient, reliable, and innovative solutions to complex problems.
+          </p>
+          <p>
+            When I'm not coding, you can find me playing football, fishing, or exploring new technologies.
+          </p>
+          <div className="education">
+            <h3>Education</h3>
+            <div className="education-item">
+              <h4>Bachelor of Science in Computer Science</h4>
+              <p>Truman State University, Expected 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
