@@ -2,9 +2,9 @@ import React from 'react';
 
 const Skills = () => {
   const skills = {
-    languages: ["JavaScript", "Python", "C/C++", "Java", "HTML/CSS"],
+    languages: ["JavaScript", "Python", "C/C++", "Java", "HTML/CSS", "C#"],
     frameworks: ["React", "Node.js", "Express", "Flask", "TensorFlow", "PyTorch", "Chart.js"],
-    tools: ["Git", "Docker", "AWS", "Linux", "VS Code", "Jupyter", "Makefile", "AVR-GCC Toolchain"],
+    tools: ["Git", "Linux", "VS Code", "Jupyter", "Makefile", "AVR-GCC Toolchain"],
     embedded: [
       "ATmega328p Microcontrollers",
       "Timers & Interrupts",
@@ -20,7 +20,7 @@ const Skills = () => {
     web: [
       "Frontend: React, Vite, CSS Modules",
       "Backend: Flask, Python APIs",
-      "Data Visualization: Chart.js, Dash",
+      "Data Visualization: Plotly.js, Dash",
       "CSV Data Processing",
       "Email Notifications (SMTP, Nodemailer)"
     ],
