@@ -12,10 +12,13 @@ const Home = () => {
           Hi, I'm <span className="highlight">Mason Crim</span>
         </h1>
         <h2 className="hero-subtitle">
-          Software Development | Embedded Systems Engineer | AI Enthusiast
+          Software Development | Embedded Systems | Artificial Intelligence
         </h2>
         <p className="hero-text">
-          I build innovative solutions at the intersection of software, hardware, and artificial intelligence.
+          I merge my background in athletics with my passion for building intelligent technology.
+
+          Bringing the discipline of sports to the world of tech,
+          I create practical applications that connect software, hardware, and AI.
         </p>
         <div className="cta-buttons">
           <Link to="/projects" className="cta primary">View Projects</Link>
